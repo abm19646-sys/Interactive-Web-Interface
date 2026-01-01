@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Random Quote Generator</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #f2f2f2;
+            text-align: center;
+            padding-top: 100px;
+        }
+
+        #box {
+            background: white;
+            width: 400px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        #quote {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="box">
+        <h2>Quote Generator</h2>
+
+        <button onclick="showQuote()">Generate Quote</button>
+
+        <p id="quote"></p>
+    </div>
+
+    <script>
+        var quotes = [
+            "Believe in yourself",
+            "Hard work never fails",
+            "Success comes with patience",
+            "Never give up",
+            "Dream big and work hard"
+        ];
+
+        var index = 0;
+
+        function showQuote() {
+            document.getElementById("quote").innerHTML = quotes[index];
+            index++;
+
+            if (index == quotes.length) {
+                index = 0;
+            }
+        }
+    </script>
+
+</body>
+</html>
