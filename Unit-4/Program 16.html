@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Show Hide Example</title>
+    <style>
+        .hidden {
+            display: none;
+        }
+
+        .highlight {
+            background-color:blueviolet;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2 id="myText" class="highlight">This is a sample text.</h2>
+
+    <button onclick="showText()">Show</button>
+    <button onclick="hideText()">Hide</button>
+    <button onclick="toggleText()">Toggle</button>
+    <button onclick="toggleHighlight()">Toggle Highlight</button>
+
+    <script>
+        function showText() {
+            document.getElementById("myText").classList.remove("hidden");
+        }
+
+        function hideText() {
+            document.getElementById("myText").classList.add("hidden");
+        }
+
+        function toggleText() {
+            document.getElementById("myText").classList.toggle("hidden");
+        }
+
+        function toggleHighlight() {
+            document.getElementById("myText").classList.toggle("highlight");
+        }
+    </script>
+
+</body>
+</html>
+ 16

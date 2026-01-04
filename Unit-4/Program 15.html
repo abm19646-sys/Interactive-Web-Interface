@@ -1,0 +1,28 @@
+!DOCTYPE html>
+<html>
+<head>
+    <title>Q15 - DOM Manipulation</title>
+</head>
+<body>
+
+<h2>DOM Manipulation Example</h2>
+
+<p id="te<xt">Original Text</p>
+<button onclick="changeText()">Change Text</button>
+
+<p class="colorBox">This will change color</p>
+<button onclick="changeColor()">Change Color</button>
+
+<script>
+function changeText() {
+    document.getElementById("text").innerHTML = "Text changed using innerHTML!";
+}
+
+function changeColor() {
+    let box = document.querySelector(".colorBox");
+    box.style.color = "blue";
+}
+</script>
+
+</body>
+</html> 15
