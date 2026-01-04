@@ -1,4 +1,4 @@
-Unit–3 introduces the fundamentals of JavaScript and focuses on adding basic interactivity and logic to web pages.
+This Unit introduces the fundamentals of JavaScript and focuses on adding basic interactivity and logic to web pages.
 This unit helps students understand how JavaScript works with HTML to make web pages dynamic and responsive to user input.
 In this unit, JavaScript is used to perform basic arithmetic operations by taking input from users. 
 This helps in understanding how data is accepted, processed, and displayed dynamically on a web page.
