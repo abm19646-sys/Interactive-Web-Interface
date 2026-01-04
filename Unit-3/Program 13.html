@@ -1,0 +1,35 @@
+!DOCTYPE html>
+<html>
+<head>
+    <title>Q13 - JS Functions</title>
+</head>
+<body>
+
+<h2>Function Demo</h2>
+<button onclick="showSum()">Click to Calculate</button>
+
+<p id="result"></p>
+
+<script>
+    // using var
+    var x = 10;
+
+    // using let
+    let y = 20;
+
+    // using const
+    const z = 5;
+
+    function addNumbers(a, b) {
+        let sum = a + b; 
+        return sum;
+    }
+
+    function showSum() {
+        let total = addNumbers(x, y) + z;
+        document.getElementById("result").innerHTML = "Total = " + total;
+    }
+</script>
+
+</body>
+</html> 
