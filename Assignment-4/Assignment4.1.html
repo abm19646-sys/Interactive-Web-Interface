@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Arrow Function</title>
+</head>
+<body>
+
+<h3>Check Even Number</h3>
+<p id="result"></p>
+
+<script>
+    // Defines an arrow function 'isEven' that returns true if a number is even
+    const isEven = num => num % 2 === 0;
+    
+    // Calls the function with the number 8 and updates the paragraph element with the result
+    document.getElementById("result").innerHTML = "Is 8 Even? " + isEven(8);
+</script>
+
+</body>
+</html>
