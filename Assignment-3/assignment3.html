@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+// Function using return
+int square(int n)
+{
+    return n * n;
+}
+
+// Function using printf
+void printSquare(int n)
+{
+    printf("Square using printf = %d\n", n * n);
+}
+
+int main()
+{
+    int num, result;
+
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    // using return
+    result = square(num);
+    printf("Square using return = %d\n", result);
+
+    // using printf
+    printSquare(num);
+
+    return 0;
+}
